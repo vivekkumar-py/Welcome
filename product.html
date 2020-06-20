@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Product</title>
+<meta name="generator" content="WYSIWYG Web Builder 15 Trial Version - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/vivhack.css" rel="stylesheet">
+<link href="css/product.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="wwb15.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#home']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_home').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#morereviews']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_morereviews').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollmorereviews()
+   {
+      var $obj = $("#wb_morereviews");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollmorereviews();
+   $(window).scroll(function(event)
+   {
+      onScrollmorereviews();
+   });
+   $("a[href*='#facts']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_facts').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#contactUs']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contactUs').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollcontactUs()
+   {
+      var $obj = $("#wb_contactUs");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollcontactUs();
+   $(window).scroll(function(event)
+   {
+      onScrollcontactUs();
+   });
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+   if (iOS)
+   {
+      $('#wb_home').css('background-attachment', 'scroll');
+   }
+});
+</script>
+</head>
+<body>
+<div id="wb_home">
+<div id="home">
+<div class="col-1">
+<div id="wb_homeText">
+<p style="font-size:32px;line-height:36px;font-weight:bold;">&nbsp;</p>
+<p style="font-size:16px;line-height:18px;color:#FFFFFF;"><span style="font-size:32px;line-height:36px;font-weight:bold;">This is our great product</span><span style="font-size:32px;line-height:36px;font-weight:bold;color:#FFFFFF;"><br /></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_morereviews">
+<div id="morereviews">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_reviewsHeading3" style="display:inline-block;width:100%;z-index:1;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+<h1 id="reviewsHeading3">Watch the video</h1>
+</div>
+<div id="wb_reviewsText2">
+<p style="color:#FFFFFF;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_facts">
+<div id="facts">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Vimeo1" style="display:inline-block;width:100%;z-index:3;">
+<iframe id="Vimeo1" src="https://player.vimeo.com/video/76979871?&autopause=1&autoplay=1&badge=1&byline=1&color=00adef&portrait=1&title=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contactUs">
+<div id="contactUs">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:4;">
+<h1 id="Heading1">CONTACT US</h1>
+</div>
+<div id="wb_Text1">
+<p style="color:#FFFFFF;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contactUsForm">
+<div id="contactUsForm">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<label for="EditboxName" id="Label1" style="display:block;width:100%;z-index:6;">Name</label>
+<input type="text" id="EditboxName" style="display:block;width: 100%;height:41px;z-index:7;" name="name" value="" spellcheck="false">
+<label for="EditboxEmail" id="Label2" style="display:block;width:100%;z-index:8;">Email</label>
+<input type="text" id="EditboxEmail" style="display:block;width: 100%;height:42px;z-index:9;" name="email" value="" spellcheck="false">
+<label for="ComboboxOption" id="Label3" style="display:block;width:100%;z-index:10;">Select an option</label>
+<select name="option" size="1" id="ComboboxOption" style="display:block;width: 100%;height:42px;z-index:11;" autocomplete="off">
+<option selected value="option-1">Option 1</option>
+<option value="option-2">Option 2</option>
+<option value="option-3">Option 3</option>
+</select>
+<label for="TextAreaMessage" id="Label4" style="display:block;width:100%;z-index:12;">Message</label>
+<textarea name="message" id="TextAreaMessage" style="display:block;width: 100%;;height:97px;z-index:13;" rows="3" cols="65" autocomplete="off" spellcheck="false"></textarea>
+<div id="wb_CheckboxUpdates" style="display:inline-block;width:34px;height:23px;z-index:14;">
+<input type="checkbox" id="CheckboxUpdates" name="Checkbox1" value="on" checked style="display:inline-block;"><label for="CheckboxUpdates"></label>
+</div>
+<label for="CheckboxUpdates" id="Label5" style="display:inline-block;width:330px;z-index:15;">Please send product updates and offers via email.</label>
+<hr id="Line1" style="display:block;width: 100%;z-index:16;">
+<input type="submit" id="Button1" name="" value="Submit" style="display:inline-block;width:140px;height:42px;z-index:17;">
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer">
+<div id="footer">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text16">
+<p style="color:#FFFFFF;">Copyright © 2019 WYSIWYG Web Builder.&nbsp; All Rights Reserved</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="StickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:27;">
+<div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:19;">
+<a href="./index.html#home"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
+</div>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_headerMenu" style="display:inline-block;width:424px;height:48px;z-index:20;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" class="headerMenu-effect" href="./index.html#home" target="_self">Home</a>
+</li>
+<li><a role="menuitem" class="headerMenu-effect" href="./services.html" target="_self">Services</a>
+</li>
+<li><a role="menuitem" class="headerMenu-effect" href="./about.html" target="_self">About</a>
+</li>
+<li><a role="menuitem" class="headerMenu-effect" href="./product.html" target="_self">Product</a>
+</li>
+<li><a role="menuitem" class="headerMenu-effect" href="#contactUs" target="_self">Contact</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb15.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:2307px;margin: 0;border-width:0;z-index:250"></a>
+</body>
+</html>

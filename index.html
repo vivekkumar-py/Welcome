@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VivHack</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/vivhack.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="transition.min.js"></script>
+<script src="collapse.min.js"></script>
+<script src="dropdown.min.js"></script>
+<script src="wwb15.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#home']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_home').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#news']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_news').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollnews()
+   {
+      var $obj = $("#wb_news");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollnews();
+   $(window).scroll(function(event)
+   {
+      onScrollnews();
+   });
+   $("a[href*='#team']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_team').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollteam()
+   {
+      var $obj = $("#wb_team");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollteam();
+   $(window).scroll(function(event)
+   {
+      onScrollteam();
+   });
+   $("a[href*='#contact']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contact').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollcontact()
+   {
+      var $obj = $("#wb_contact");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollcontact();
+   $(window).scroll(function(event)
+   {
+      onScrollcontact();
+   });
+   $(document).on('click','.ThemeableMenu1-navbar-collapse.in',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+   if (iOS)
+   {
+      $('#wb_home').css('background-attachment', 'scroll');
+   }
+});
+</script>
+</head>
+<body>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1000;">
+<div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ThemeableMenu1-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="ThemeableMenu1-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Subject<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="https://nptel.ac.in/courses/106/105/106105191/">Programming with Java</a></li>
+<li><a href="https://nptel.ac.in/courses/106/108/106108103/">Web Desiging</a></li>
+<li><a href="http://">System Analysis & Designe</a></li>
+<li><a href="https://nptel.ac.in/courses/106/108/106108101/">Operating System(O.S)</a></li>
+<li><a href="https://www.guru99.com/unix-linux-tutorial.html">Linux</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_headerMenu" style="display:inline-block;width:calc(100% - -97px);z-index:1;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" class="headerMenu-effect" href="./index.html#home" target="_self">Home</a>
+</li>
+<li><a role="menuitem" class="withsubmenu headerMenu-effect" href="./services.html" target="_self">Services</a>
+
+<ul role="menu">
+<li class="firstitem"><a role="menuitem" class="withsubmenu" href="#" target="_self">PDF&nbsp;Notes</a>
+
+<ul role="menu">
+<li class="firstitem"><a role="menuitem" href="#" target="_self">Java</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Web&nbsp;Desiging</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">System&nbsp;Analysis&nbsp;&amp;&nbsp;Design</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Operating&nbsp;System</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Linux</a>
+</li>
+<li class="lastitem"><a role="menuitem" href="#" target="_self">Others</a>
+</li>
+</ul>
+</li>
+<li><a role="menuitem" href="#" target="_self">Practical&nbsp;Files</a>
+</li>
+<li><a role="menuitem" href="http://mcu.tecz.com/notices-notifications-for-students-and-study-centers/" target="_self">Notice&nbsp;Board</a>
+</li>
+<li><a role="menuitem" href="http://iiseindia.com/index.html" target="_self">&nbsp;My&nbsp;College&nbsp;</a>
+</li>
+<li><a role="menuitem" href="http://www.mcu.ac.in/question-papers/#May-June-2019" target="_self">Previous&nbsp;Year&nbsp;Papers</a>
+</li>
+<li class="lastitem"><a role="menuitem" href="http://iiseindia.com/images/photos/bca.pdf" target="_self">Syllabus-&nbsp;BCA(MCRP)&nbsp;</a>
+</li>
+</ul>
+</li>
+<li><a role="menuitem" class="headerMenu-effect" href="./about.html" target="_self">About</a>
+</li>
+<li><a role="menuitem" class="withsubmenu headerMenu-effect" href="#" target="_self">Zoom&nbsp;Online</a>
+
+<ul role="menu">
+<li class="firstitem"><a role="menuitem" href="https://drive.google.com/drive/folders/1KINsVVQsydx51VI22jq4ubKNvtbAwmlI" target="_self">Java&nbsp;&amp;&nbsp;Web&nbsp;Design</a>
+</li>
+<li><a role="menuitem" href="https://drive.google.com/folderview?id=1eWYkSW5d6SMBYtpAi4oNfNXeRzKMjLWQ" target="_self">System&nbsp;Analysis&nbsp;&amp;&nbsp;Design</a>
+</li>
+<li><a role="menuitem" href="http://https://drive.google.com/folderview?id=1T52-JG0Zx9qZVNo8XHz7Vr50OGglaRQv" target="_self">Operating&nbsp;System</a>
+</li>
+<li class="lastitem"><a role="menuitem" href="#" target="_self">Linux</a>
+</li>
+</ul>
+</li>
+<li><a role="menuitem" class="headerMenu-effect" href="#contactUs" target="_self">Contact</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_home">
+<div id="home">
+<div class="col-1">
+<div id="wb_Marquee1">
+<div id="Marquee1">
+<span style="color:#008014;font-family:'Comic Sans MS';font-size:25px;"><strong>W</strong></span><span style="color:#FF0000;font-family:'Comic Sans MS';font-size:25px;"><strong>e</strong></span><span style="color:#008B8B;font-family:'Comic Sans MS';font-size:25px;"><strong>l</strong></span><span style="color:#FF8C00;font-family:'Comic Sans MS';font-size:25px;"><strong>c</strong></span><span style="color:#00008B;font-family:'Comic Sans MS';font-size:25px;"><strong>o</strong></span><span style="color:#FF4500;font-family:'Comic Sans MS';font-size:25px;"><strong>m</strong></span><span style="color:#3CB371;font-family:'Comic Sans MS';font-size:25px;"><strong>e </strong></span><span style="color:#FF8C00;font-family:'Comic Sans MS';font-size:25px;"><strong>to </strong></span><span style="color:#00FA9A;font-family:'Comic Sans MS';font-size:25px;"><strong>m</strong></span><span style="color:#FF0000;font-family:'Comic Sans MS';font-size:25px;"><strong>y </strong></span><span style="color:#0000CD;font-family:'Comic Sans MS';font-size:25px;"><strong>w</strong></span><span style="color:#8B0000;font-family:'Comic Sans MS';font-size:25px;"><strong>e</strong></span><span style="color:#D8BFD8;font-family:'Comic Sans MS';font-size:25px;"><strong>b</strong></span><span style="color:#AFEEEE;font-family:'Comic Sans MS';font-size:25px;"><strong>s</strong></span><span style="color:#00FF7F;font-family:'Comic Sans MS';font-size:25px;"><strong>i</strong></span><span style="color:#87CEFA;font-family:'Comic Sans MS';font-size:25px;"><strong>t</strong></span><span style="color:#FF0000;font-family:'Comic Sans MS';font-size:25px;"><strong>e-</strong></span><span style="color:#191970;font-family:'Comic Sans MS';font-size:25px;"><strong><u>v</u></strong></span><span style="color:#000080;font-family:'Comic Sans MS';font-size:25px;"><strong><u>i</u></strong></span><span style="color:#0000CD;font-family:'Comic Sans MS';font-size:25px;"><strong><u>v</u></strong></span><span style="color:#0000FF;font-family:'Comic Sans MS';font-size:25px;"><strong><u>h</u></strong></span><span style="color:#1E90FF;font-family:'Comic Sans MS';font-size:25px;"><strong><u>a</u></strong></span><span style="color:#00BFFF;font-family:'Comic Sans MS';font-size:25px;"><strong><u>c</u></strong></span><span style="color:#87CEEB;font-family:'Comic Sans MS';font-size:25px;"><strong><u>k</u></strong></span><span style="color:#00FF7F;font-family:'Comic Sans MS';font-size:25px;"><strong><u>.</u></strong></span><span style="color:#FFFFFF;font-family:'Comic Sans MS';font-size:25px;"><strong><u>com</u></strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:25px;"><u><br></u></span>
+</div></div>
+<div id="wb_homeText">
+<p style="font-size:21px;line-height:30px;font-weight:bold;color:#FFFFFF;">Hello ! Dear friends this is my Home Page, so I have to say something about myself and share some content of </p>
+<p style="font-size:21px;line-height:30px;font-weight:bold;color:#FFFFFF;">BCA(M) 4th Semester Notes during Covid 19 lockdown. </p>
+</div>
+<div id="wb_homeShape" style="display:inline-block;width:276px;height:60px;z-index:4;position:relative;">
+<a href="#Block"><img src="images/img0001.png" id="homeShape" alt="" style="width:276px;height:60px;"></a>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_CardContainer1">
+<div id="CardContainer1">
+<div id="wb_Card1" style="display:flex;text-align:center;z-index:5;">
+   <div id="Card1-card-body">
+      <div id="Card1-card-item0"><svg class="svg-icon" viewBox="0 0 300 234" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <g transform="scale(1)">
+   <path d="M317 21 L343 234 C329 234, 314 231, 300 224 C278 214, 256 209, 234 209 C209 209, 188 217, 172 234 C155 217, 134 209, 109 209 C88 209, 66 214, 43 224 C29 231, 15 234, 1 234 L0 234 L26 21 C51 7, 78 0, 107 0 C133 0, 155 5, 172 17 C189 5, 211 0, 237 0 C265 0, 292 7, 317 21 Z M234 186 C249 186, 262 188, 273 191 C285 194, 299 199, 317 206 L296 35 C277 27, 256 22, 234 22 C209 22, 189 30, 172 46 C155 30, 134 22, 109 22 C87 22, 67 27, 48 35 L27 206 C39 202, 48 198, 55 196 C61 193, 70 191, 79 189 C89 187, 99 186, 109 186 C132 186, 153 192, 172 204 C191 192, 212 186, 234 186 Z M241 180 L232 28 C208 29, 188 38, 172 54 C155 37, 134 28, 109 28 C90 28, 71 32, 53 40 L34 197 C48 191, 61 187, 72 184 C84 182, 96 180, 109 180 C133 180, 153 186, 172 197 C191 185, 212 180, 234 180"/>
+   </g>
+</svg>
+</div>
+      <div id="Card1-card-item1">Online Classes</div>
+      <hr id="Card1-card-item2">
+      <div id="Card1-card-item3">A complete e-learning platform with live classes, digital syllabus, Private Video Channel. <br>(NPTEL)</div>
+      <div id="Card1-card-item4"><a href="./Online-Class.html"> Let Join </a></div>
+   </div>
+
+</div>
+<div id="wb_Card2" style="display:flex;text-align:center;z-index:6;">
+   <div id="Card2-card-body">
+      <div id="Card2-card-item0"><svg class="svg-icon" viewBox="0 0 300 214" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <g transform="scale(1)">
+   <path d="M70 171 C63 171, 56 169, 51 164 C46 158, 43 152, 43 145 L43 27 C43 19, 46 13, 51 8 C56 3, 63 0, 70 0 L252 0 C260 0, 266 3, 271 8 C276 13, 279 19, 279 27 L279 145 C279 152, 276 158, 271 164 C266 169, 260 171, 252 171 Z M65 27 L65 145 C65 146, 65 147, 66 148 C67 149, 69 150, 70 150 L252 150 C254 150, 255 149, 256 148 C257 147, 258 146, 258 145 L258 27 C258 25, 257 24, 256 23 C255 22, 254 21, 252 21 L70 21 C69 21, 67 22, 66 23 C65 24, 65 25, 65 27 Z M295 182 L322 182 L322 198 C322 203, 319 206, 314 210 C309 213, 302 214, 295 214 L27 214 C20 214, 14 213, 8 210 C3 206, 0 203, 0 198 L0 182 L27 182Z  M175 198 C176 198, 177 197, 177 196 C177 194, 176 193, 175 193 L148 193 C146 193, 145 194, 145 196 C145 197, 146 198, 148 198"/>
+   </g>
+</svg>
+</div>
+      <div id="Card2-card-item1">Reading Tonight</div>
+      <hr id="Card2-card-item2">
+      <div id="Card2-card-item3">Here's a look at top ten websites providing free education to students: EdX: edx.org. Academic Earth: academicearth.org. Internet Archive: archive.org. Big Think: bigthink.com. Coursera: courser.org. Brightstorm: brightstorm.com. CosmoLearning: cosmolearning.com. Futures Channel: thefutureschannel.com</div>
+      <div id="Card2-card-item4"><a href="./topics.html">Start Now!</a></div>
+   </div>
+
+</div>
+<div id="wb_Card3" style="display:flex;text-align:center;z-index:7;">
+   <div id="Card3-card-body">
+      <div id="Card3-card-item0"><svg class="svg-icon" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <g transform="scale(1)">
+   <path d="M109 181 C109 181, 108 181, 107 181 C106 180, 104 179, 102 179 L98 177 C93 175, 89 172, 84 169 C83 168, 81 167, 77 164 C73 161, 71 159, 71 159 C63 170, 56 180, 48 189 C39 200, 33 206, 31 208 C30 208, 29 208, 27 208 C26 208, 24 208, 24 208 C25 208, 29 203, 38 193 C40 190, 45 184, 52 174 C59 163, 64 157, 65 154 C67 150, 70 145, 74 137 C78 130, 80 125, 80 124 C79 124, 73 126, 61 130 C61 130, 59 131, 57 131 C55 132, 53 132, 51 133 C49 133, 48 133, 48 134 C48 134, 48 134, 48 135 C48 136, 48 137, 48 137 C47 138, 45 139, 43 139 C40 140, 37 140, 35 139 C33 139, 31 138, 30 136 C30 135, 29 134, 29 132 C30 132, 31 132, 33 131 C35 131, 37 131, 38 130 C45 128, 51 127, 56 125 C67 121, 73 119, 73 119 C74 119, 76 118, 80 116 C84 114, 86 113, 87 112 C88 112, 90 111, 91 111 C92 110, 93 110, 93 110 C94 110, 94 110, 94 110 C95 111, 95 113, 94 115 C94 116, 94 117, 92 120 C91 123, 89 126, 88 129 C86 132, 85 134, 85 135 C82 140, 78 147, 72 157 L83 161 C84 162, 88 164, 95 167 C102 169, 106 171, 107 171 C107 171, 108 173, 108 176 C109 178, 109 180, 109 181 Z M75 99 C75 101, 75 102, 74 104 C73 107, 70 109, 66 110 C62 112, 59 112, 56 112 C53 112, 50 111, 47 108 C46 106, 45 104, 44 101 L45 101 C45 101, 46 101, 48 101 C50 102, 51 102, 52 101 C53 101, 57 100, 62 99 C66 97, 69 97, 71 96 C73 96, 74 97, 75 99 Z M192 121 L202 159 L179 152Z  M6 255 L122 216 L122 43 L6 82Z  M214 202 L231 207 L201 97 L184 92 L148 181 L165 187 L172 168 L208 179Z  M130 41 L226 71 L226 8Z  M182 262 L208 264 L199 291 L192 280 C178 289, 162 295, 146 298 C140 299, 135 300, 131 300 L117 300 C108 300, 97 298, 83 294 C70 289, 60 285, 53 279 C52 279, 51 278, 51 277 C51 276, 52 275, 52 274 C53 274, 54 274, 54 274 C55 274, 56 274, 57 275 C59 276, 61 277, 63 278 C64 279, 66 279, 66 279 C74 284, 83 287, 93 290 C102 292, 111 294, 119 294 C130 294, 139 293, 147 291 C155 290, 164 287, 173 283 C175 282, 177 281, 178 280 C180 279, 182 278, 184 277 C186 276, 188 275, 189 274 Z M257 82 L257 262 L127 221 C126 222, 105 229, 64 242 C24 256, 3 263, 3 263 C1 263, 0 262, 0 260 C0 260, 0 260, 0 260 L0 79 C0 78, 0 78, 0 78 C1 77, 2 77, 4 76 C15 72, 24 69, 28 68 L28 3 L122 36 C122 36, 131 33, 149 27 C166 21, 184 15, 202 9 C219 3, 228 0, 229 0 C231 0, 232 1, 232 4 L232 74Z "/>
+   </g>
+</svg>
+</div>
+      <div id="Card3-card-item1">Online Compiler</div>
+      <hr id="Card3-card-item2">
+      <div id="Card3-card-item3">Here Top best Compilers For C,C++,Java,Python etc</div>
+      <div id="Card3-card-item4"><a href="https://techiedelight.com/compiler/">Compile Now</a></div>
+   </div>
+
+</div>
+</div>
+</div>
+<div id="wb_news">
+<div id="news">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_newsHeading" style="display:inline-block;width:100%;z-index:8;">
+<h1 id="newsHeading"><a href="http://iiseindia.com/">About My Collage- Click Here</a></h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_WrapTextLayoutGrid">
+<div id="WrapTextLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="WrapText1" style="display:block;width: 100%;overflow:hidden;">
+<div id="WrapText1-float">
+<div id="wb_Image1" style="display:inline-block;width:257px;height:257px;z-index:9;">
+<img src="images/SAVE_20200515_231706 copy.jpg" id="Image1" alt="">
+</div>
+</div>
+<div class="WrapText1">                                                                                                                                                 Hello ! My self Vivek Kumar Vishwakarma and I'm pursuing  my  I.T Course (BCA) from International Institute for Special Education (IISE). During the lockdown against with Covid 19 virus so we deside that we are make a Website for our college friends.    In this website we collect to almost all study material for BCA(MCRP) 4th Semester.             </div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="WrapText2" style="display:block;width: 100%;overflow:hidden;">
+<div id="WrapText2-float">
+<div id="wb_WrapText2Image" style="display:inline-block;width:157px;height:165px;z-index:11;">
+<img src="images/logo-wide-white.png" id="WrapText2Image" alt="" style="margin-right: 4px;">
+</div>
+</div>
+<div class="WrapText2">International Institute for Special Education (IISE)<br>The class and culture of International Institute for Special Education (IISE), Lucknow is as rich as the city in which it is located. IISE is not merely a Management and IT school College, but an Institution that acts as a conversion centre where budding professional are transformed into potential man-agers; equipped with all necessary skills and ethics required to succeed in the corporate world.<br><br>IISE is committed towards offering quality education and ensuring placements for students for a very affordable fee. Its sprawling lush green campus means the students can look beyond the usual concrete jungles and study in the lap of nature. </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_team">
+<div id="team">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_teamHeading" style="display:inline-block;width:100%;z-index:13;">
+<h1 id="teamHeading">Our Viv....Hack Team</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_CardContainer2">
+<div id="CardContainer2">
+<div id="wb_teamCard1" style="display:flex;text-align:center;z-index:14;">
+   <div id="teamCard1-card-body">
+      <img id="teamCard1-card-item0" src="images/IMG_20191115_131057.jpg" alt="" title="">
+      <div id="teamCard1-card-item1">Amit Tiwari</div>
+      <hr id="teamCard1-card-item2">
+      <div id="teamCard1-card-item3">Developer</div>
+   </div>
+
+</div>
+<div id="wb_teamCard2" style="display:flex;text-align:center;z-index:15;">
+   <div id="teamCard2-card-body">
+      <img id="teamCard2-card-item0" src="images/IMG-20200511-WA0007.jpg" alt="" title="">
+      <div id="teamCard2-card-item1"><a href="http://https://www.facebook.com/vivekkumar.vishwakarma.56">Vivek Tomer</a></div>
+      <hr id="teamCard2-card-item2">
+      <div id="teamCard2-card-item3">Designer</div>
+   </div>
+
+</div>
+<div id="wb_teamCard3" style="display:flex;text-align:center;z-index:16;">
+   <div id="teamCard3-card-body">
+      <img id="teamCard3-card-item0" src="images/SAVE_20200515_231706 copy.jpg" alt="" title="">
+      <div id="teamCard3-card-item1">Vivek Vishwakarma</div>
+      <hr id="teamCard3-card-item2">
+      <div id="teamCard3-card-item3">Project Manager</div>
+   </div>
+
+</div>
+</div>
+</div>
+<div id="wb_contact">
+<div id="contact">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_contactHeading" style="display:inline-block;width:100%;z-index:17;">
+<h1 id="contactHeading">Contact us</h1>
+</div>
+<div id="wb_contactText">
+<p style="color:#FFFFFF;">Web Devoleper : Amit Tiwari </p>
+<p>&nbsp;</p>
+<p style="color:#FFFFFF;">Project Manager:&nbsp;&nbsp; Vivek Kumar Vishwakarma</p>
+<p style="color:#FFFFFF;">Address: IISE Collage Kalyanpur Luckown-226020</p>
+<p style="color:#FFFFFF;">Ph.No:&nbsp; +91- 9889481855&nbsp; </p>
+<p style="color:#FFFFFF;">Email Id :&nbsp; vivek964800@gmail.com</p>
+<p>&nbsp;</p>
+<p style="color:#FFFFFF;">Web Designer :&nbsp; Vivek Tomer</p>
+<p style="color:#FFFFFF;">Ph.No: +918707794910</p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contacForm">
+<div id="contacForm">
+<div class="col-1">
+</div>
+<div class="col-2">
+<label for="contactName" id="contactLabel1" style="display:inline-block;width:636px;z-index:19;">Name</label>
+<input type="text" id="contactName" style="display:block;width: 100%;height:41px;z-index:20;" name="name" value="" spellcheck="false">
+<label for="contactEmail" id="contactLabel2" style="display:block;width:100%;z-index:21;">Email</label>
+<input type="text" id="contactEmail" style="display:block;width: 100%;height:42px;z-index:22;" name="email" value="" spellcheck="false">
+<label for="contactOption" id="contactLabel3" style="display:block;width:100%;z-index:23;">Select an option</label>
+<select name="option" size="1" id="contactOption" style="display:block;width: 100%;height:42px;z-index:24;" autocomplete="off">
+<option selected value="option-1">Option 1</option>
+<option value="option-2">Option 2</option>
+<option value="option-3">Option 3</option>
+</select>
+<label for="contactMessage" id="contactLabel4" style="display:block;width:100%;z-index:25;">Message</label>
+<textarea name="message" id="contactMessage" style="display:block;width: 100%;;height:97px;z-index:26;" rows="4" cols="73" autocomplete="off" spellcheck="false"></textarea>
+<div id="wb_contactUpdates" style="display:inline-block;width:58px;height:26px;z-index:27;">
+<input type="checkbox" name="" id="contactUpdates" value="" checked>
+<label id="contactUpdates-label" for="contactUpdates">
+<span id="contactUpdates-inner"></span>
+<span id="contactUpdates-switch"></span>
+</label>
+
+</div>
+<label for="contactUpdates" id="contactLabel5" style="display:inline-block;width:426px;z-index:28;">Please fill the form for Notifacations!</label>
+<hr id="contactSpacer" style="display:block;width: 100%;z-index:29;">
+<a id="contactButton" href="" style="display:inline-block;width:138px;height:40px;z-index:30;">Submit</a>
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+<div id="wb_footer">
+<div id="footer">
+<div class="row">
+<div class="col-1">
+<div id="wb_footerText">
+<p style="color:#FFFFFF;">Copyright Ãƒâ€šÃ‚Â© 2019 WYSIWYG Web Builder.&nbsp; All Rights Reserved</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:45;">
+<div id="wb_upIcon" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:32;">
+<a href="./index.html#home"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About</title>
+<meta name="generator" content="WYSIWYG Web Builder 15 Trial Version - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/vivhack.css" rel="stylesheet">
+<link href="css/about.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wwb15.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#wb_CardService1').addClass('visibility-hidden');
+   $('#wb_CardService2').addClass('visibility-hidden');
+   $('#wb_CardService3').addClass('visibility-hidden');
+   $('#wb_CardService4').addClass('visibility-hidden');
+   $("a[href*='#home']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_home').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#facts']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_facts').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollfacts()
+   {
+      var $obj = $("#wb_facts");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollfacts();
+   $(window).scroll(function(event)
+   {
+      onScrollfacts();
+   });
+   $("a[href*='#serivcesCards']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_serivcesCards').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#contactUs']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contactUs').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollcontactUs()
+   {
+      var $obj = $("#wb_contactUs");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollcontactUs();
+   $(window).scroll(function(event)
+   {
+      onScrollcontactUs();
+   });
+   function onScrollBookmark1()
+   {
+      var $obj = $("#wb_Bookmark1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_CardService1', 'animate-fade-in-up', 0, 1000);
+      }
+   }
+   onScrollBookmark1();
+   $(window).scroll(function(event)
+   {
+      onScrollBookmark1();
+   });
+   function onScrollBookmark2()
+   {
+      var $obj = $("#wb_Bookmark2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_CardService2', 'animate-fade-in-up', 0, 1000);
+      }
+   }
+   onScrollBookmark2();
+   $(window).scroll(function(event)
+   {
+      onScrollBookmark2();
+   });
+   function onScrollBookmark3()
+   {
+      var $obj = $("#wb_Bookmark3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_CardService3', 'animate-fade-in-up', 0, 1000);
+      }
+   }
+   onScrollBookmark3();
+   $(window).scroll(function(event)
+   {
+      onScrollBookmark3();
+   });
+   function onScrollBookmark4()
+   {
+      var $obj = $("#wb_Bookmark4");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_CardService4', 'animate-fade-in-up', 0, 1000);
+      }
+   }
+   onScrollBookmark4();
+   $(window).scroll(function(event)
+   {
+      onScrollBookmark4();
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_home">
+<div id="home">
+<div class="col-1">
+<div id="wb_homeText">
+<p style="font-size:16px;line-height:18px;color:#FFFFFF;"><span style="font-size:32px;line-height:36px;font-weight:bold;">About</span><span style="font-size:32px;line-height:36px;font-weight:bold;"> us</span>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_facts">
+<div id="facts">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_reviewsHeading3" style="display:inline-block;width:100%;z-index:1;">
+<h1 id="reviewsHeading3">Experience in technology</h1>
+</div>
+<div id="wb_reviewsText2">
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_serivcesCards">
+<div id="serivcesCards">
+<div class="row">
+<div class="col-1">
+<div id="wb_CardService1" style="display:flex;width:100%;text-align:center;z-index:3;">
+   <div id="CardService1-card-body">
+      <div id="CardService1-card-item0"><svg class="svg-icon" viewBox="0 0 300 257" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <g transform="scale(1)">
+   <path d="M196 114 L125 185 C123 187, 120 188, 117 188 C114 188, 112 187, 110 185 L61 136 C59 134, 57 131, 57 128 C57 125, 59 123, 61 121 L78 104 C80 101, 82 100, 85 100 C88 100, 91 101, 93 104 L117 128 L163 82 C166 80, 168 79, 171 79 C174 79, 176 80, 178 82 L196 99 C198 101, 199 104, 199 107 C199 110, 198 112, 196 114 Z M207 174 C215 160, 219 145, 219 128 C219 112, 215 96, 207 82 C199 68, 188 57, 174 49 C160 41, 145 37, 128 37 C112 37, 96 41, 82 49 C68 57, 57 68, 49 82 C41 96, 37 112, 37 128 C37 145, 41 160, 49 174 C57 188, 68 199, 82 207 C96 215, 112 219, 128 219 C145 219, 160 215, 174 207 C188 199, 199 188, 207 174 Z M239 64 C251 83, 257 105, 257 128 C257 151, 251 173, 239 193 C228 212, 212 228, 193 239 C173 251, 151 257, 128 257 C105 257, 83 251, 64 239 C44 228, 28 212, 17 193 C5 173, 0 151, 0 128 C0 105, 5 83, 17 64 C28 44, 44 28, 64 17 C83 5, 105 0, 128 0 C151 0, 173 5, 193 17 C212 28, 228 44, 239 64"/>
+   </g>
+</svg>
+</div>
+      <div id="CardService1-card-item1">Service 1</div>
+      <div id="CardService1-card-item2">Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+<div id="wb_Bookmark1" style="display:inline-block;width:100%;z-index:4;">
+<a id="Bookmark1" style="visibility:hidden;">&nbsp;</a>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_CardService2" style="display:flex;width:100%;text-align:center;z-index:5;">
+   <div id="CardService2-card-body">
+      <div id="CardService2-card-item0"><svg class="svg-icon" viewBox="0 0 300 214" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <g transform="scale(1)">
+   <path d="M70 171 C63 171, 56 169, 51 164 C46 158, 43 152, 43 145 L43 27 C43 19, 46 13, 51 8 C56 3, 63 0, 70 0 L252 0 C260 0, 266 3, 271 8 C276 13, 279 19, 279 27 L279 145 C279 152, 276 158, 271 164 C266 169, 260 171, 252 171 Z M65 27 L65 145 C65 146, 65 147, 66 148 C67 149, 69 150, 70 150 L252 150 C254 150, 255 149, 256 148 C257 147, 258 146, 258 145 L258 27 C258 25, 257 24, 256 23 C255 22, 254 21, 252 21 L70 21 C69 21, 67 22, 66 23 C65 24, 65 25, 65 27 Z M295 182 L322 182 L322 198 C322 203, 319 206, 314 210 C309 213, 302 214, 295 214 L27 214 C20 214, 14 213, 8 210 C3 206, 0 203, 0 198 L0 182 L27 182Z  M175 198 C176 198, 177 197, 177 196 C177 194, 176 193, 175 193 L148 193 C146 193, 145 194, 145 196 C145 197, 146 198, 148 198"/>
+   </g>
+</svg>
+</div>
+      <div id="CardService2-card-item1">Service 2</div>
+      <div id="CardService2-card-item2">Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+<div id="wb_Bookmark2" style="display:inline-block;width:100%;z-index:6;">
+<a id="Bookmark2" style="visibility:hidden;">&nbsp;</a>
+
+</div>
+</div>
+<div class="col-3">
+<div id="wb_CardService3" style="display:flex;width:100%;text-align:center;z-index:7;">
+   <div id="CardService3-card-body">
+      <div id="CardService3-card-item0"><svg class="svg-icon" viewBox="0 0 300 236" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <g transform="scale(1)">
+   <path d="M58 165 C62 161, 64 156, 64 150 C64 144, 62 139, 58 135 C53 131, 48 129, 42 129 C36 129, 31 131, 27 135 C23 139, 21 144, 21 150 C21 156, 23 161, 27 165 C31 169, 36 171, 42 171 C48 171, 53 169, 58 165 Z M90 90 C94 86, 96 81, 96 75 C96 69, 94 64, 90 60 C86 56, 80 54, 75 54 C69 54, 64 56, 59 60 C55 64, 53 69, 53 75 C53 81, 55 86, 59 90 C64 94, 69 96, 75 96 C80 96, 86 94, 90 90 Z M168 156 L185 92 C185 89, 185 86, 183 83 C182 81, 180 79, 177 79 C174 78, 171 78, 169 80 C166 81, 165 83, 164 86 L147 150 C140 151, 134 153, 129 157 C124 162, 120 167, 118 174 C116 183, 117 191, 122 198 C126 206, 133 211, 141 213 C150 216, 158 214, 166 210 C173 205, 178 199, 181 190 C182 184, 182 177, 180 171 C177 164, 173 159, 168 156 Z M272 165 C276 161, 278 156, 278 150 C278 144, 276 139, 272 135 C268 131, 263 129, 257 129 C251 129, 246 131, 242 135 C237 139, 235 144, 235 150 C235 156, 237 161, 242 165 C246 169, 251 171, 257 171 C263 171, 268 169, 272 165 Z M165 58 C169 54, 171 49, 171 43 C171 37, 169 32, 165 28 C161 24, 155 21, 150 21 C144 21, 139 24, 134 28 C130 32, 128 37, 128 43 C128 49, 130 54, 134 58 C139 62, 144 64, 150 64 C155 64, 161 62, 165 58 Z M240 90 C244 86, 246 81, 246 75 C246 69, 244 64, 240 60 C236 56, 230 54, 225 54 C219 54, 214 56, 209 60 C205 64, 203 69, 203 75 C203 81, 205 86, 209 90 C214 94, 219 96, 225 96 C230 96, 236 94, 240 90 Z M300 150 C300 179, 292 206, 276 231 C274 234, 271 236, 267 236 L32 236 C28 236, 25 234, 23 231 C7 206, 0 179, 0 150 C0 130, 4 110, 11 92 C19 73, 30 57, 43 44 C57 30, 73 20, 91 12 C110 4, 129 0, 150 0 C170 0, 189 4, 208 12 C226 20, 242 30, 256 44 C269 57, 280 73, 288 92 C296 110, 300 130, 300 150"/>
+   </g>
+</svg>
+</div>
+      <div id="CardService3-card-item1">Service 3</div>
+      <div id="CardService3-card-item2">Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+<div id="wb_Bookmark3" style="display:inline-block;width:100%;z-index:8;">
+<a id="Bookmark3" style="visibility:hidden;">&nbsp;</a>
+
+</div>
+</div>
+<div class="col-4">
+<div id="wb_CardService4" style="display:flex;width:100%;text-align:center;z-index:9;">
+   <div id="CardService4-card-body">
+      <div id="CardService4-card-item0"><svg class="svg-icon" viewBox="0 0 300 257" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <g transform="scale(1)">
+   <path d="M300 187 L300 241 C300 245, 298 249, 295 252 C292 255, 288 257, 283 257 L230 257 C225 257, 222 255, 219 252 C215 249, 214 245, 214 241 L214 187 C214 183, 215 179, 219 176 C222 173, 225 171, 230 171 L246 171 L246 139 L160 139 L160 171 L176 171 C181 171, 185 173, 188 176 C191 179, 192 183, 192 187 L192 241 C192 245, 191 249, 188 252 C185 255, 181 257, 176 257 L123 257 C118 257, 115 255, 111 252 C108 249, 107 245, 107 241 L107 187 C107 183, 108 179, 111 176 C115 173, 118 171, 123 171 L139 171 L139 139 L53 139 L53 171 L69 171 C74 171, 77 173, 81 176 C84 179, 85 183, 85 187 L85 241 C85 245, 84 249, 81 252 C77 255, 74 257, 69 257 L16 257 C11 257, 7 255, 4 252 C1 249, 0 245, 0 241 L0 187 C0 183, 1 179, 4 176 C7 173, 11 171, 16 171 L32 171 L32 139 C32 133, 34 128, 38 124 C42 120, 47 117, 53 117 L139 117 L139 85 L123 85 C118 85, 115 84, 111 81 C108 77, 107 74, 107 69 L107 16 C107 11, 108 7, 111 4 C115 1, 118 0, 123 0 L176 0 C181 0, 185 1, 188 4 C191 7, 192 11, 192 16 L192 69 C192 74, 191 77, 188 81 C185 84, 181 85, 176 85 L160 85 L160 117 L246 117 C252 117, 257 120, 261 124 C265 128, 267 133, 267 139 L267 171 L283 171 C288 171, 292 173, 295 176 C298 179, 300 183, 300 187"/>
+   </g>
+</svg>
+</div>
+      <div id="CardService4-card-item1">Service 4</div>
+      <div id="CardService4-card-item2">Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+<div id="wb_Bookmark4" style="display:inline-block;width:100%;z-index:10;">
+<a id="Bookmark4" style="visibility:hidden;">&nbsp;</a>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_headerMenu" style="display:inline-block;width:424px;height:48px;z-index:11;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" class="headerMenu-effect" href="./index.html#home" target="_self">Home</a>
+</li>
+<li><a role="menuitem" class="headerMenu-effect" href="./services.html" target="_self">Services</a>
+</li>
+<li><a role="menuitem" class="headerMenu-effect" href="./about.html" target="_self">About</a>
+</li>
+<li><a role="menuitem" class="headerMenu-effect" href="./product.html" target="_self">Product</a>
+</li>
+<li><a role="menuitem" class="headerMenu-effect" href="#contactUs" target="_self">Contact</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contactUs">
+<div id="contactUs">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:12;">
+<h1 id="Heading1">CONTACT US</h1>
+</div>
+<div id="wb_Text1">
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer">
+<div id="footer">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="StickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:21;">
+<div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:14;">
+<a href="./index.html#home"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
+</div>
+<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb15.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:2798px;margin: 0;border-width:0;z-index:250"></a>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 15 Trial Version - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/vivhack.css" rel="stylesheet">
+<link href="css/Online-Class.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="wwb15.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#morereviews']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_morereviews').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollmorereviews()
+   {
+      var $obj = $("#wb_morereviews");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollmorereviews();
+   $(window).scroll(function(event)
+   {
+      onScrollmorereviews();
+   });
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
+   $("a[href*='#facts']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_facts').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#contactUs']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contactUs').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollcontactUs()
+   {
+      var $obj = $("#wb_contactUs");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollcontactUs();
+   $(window).scroll(function(event)
+   {
+      onScrollcontactUs();
+   });
+});
+</script>
+</head>
+<body>
+<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb15.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:967px;margin: 0;border-width:0;z-index:250"></a>
+<div id="wb_morereviews">
+<div id="morereviews">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_reviewsHeading3" style="display:inline-block;width:100%;z-index:0;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+<h1 id="reviewsHeading3">Available Video Cources</h1>
+</div>
+<div id="wb_reviewsText2">
+<p style="color:#FFFFFF;"><a href="https://nptel.ac.in/courses/106/105/106105171/">1. Problem Solving through Programming in C</a></p>
+<p>&nbsp;</p>
+<p style="color:#FFFFFF;"><a href="https://nptel.ac.in/courses/106/105/106105151/">2. Programming in C++</a></p>
+<p>&nbsp;</p>
+<p style="color:#FFFFFF;"><a href="https://nptel.ac.in/courses/106/105/106105191/">3. Programming in Java</a></p>
+<p>&nbsp;</p>
+<p style="color:#FF0000;"><a href="https://nptel.ac.in/courses/106/106/106106145/">&nbsp;4. Programming, Data Structures and Algorithms using Python</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_facts">
+<div id="facts">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Vimeo1" style="display:inline-block;width:100%;z-index:2;">
+<iframe id="Vimeo1" src="https://player.vimeo.com/video/76979871?&autopause=1&autoplay=1&badge=1&byline=1&color=00adef&portrait=1&title=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contactUs">
+<div id="contactUs">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:3;">
+<h1 id="Heading1">CONTACT US</h1>
+</div>
+<div id="wb_Text1">
+<p style="color:#FFFFFF;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer">
+<div id="footer">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text16">
+<p style="color:#FFFFFF;">Copyright © 2019 WYSIWYG Web Builder.&nbsp; All Rights Reserved</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="StickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:12;">
+<div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:6;">
+<a href="./index.html#home"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
+</div>
+</body>
+</html>
